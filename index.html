@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <h1>EVS Master</h1>
+    </head>
+    <body>
+        <section>
+            <script src="index.js"> </script>
+            <div class="border">
+            <div class="form">
+            <label for="Sport">Sport</label>
+            <div class="sport">
+            
+            <input type="text" id="sport" class="Sport" >
+        </div>
+        <label for="Specification">Specifikace</label>
+        <div class="specification">
+            <input id="specifikace" type="text" class="Specification" >
+        </div>
+        <label for="clip">číslo klipu nebo playlistu</label>
+        <div class="clip">
+            <input id="clip" type="number" class="clip" >
+        </div>
+        <label for="select" class="selectlabel">Vyber</label>
+            <div class="divSelect">
+       <select name="select" id="select">    
+    <option value="Clip">Clip</option>
+    <option value="Playlist">Playlist</option>
+  </select>
+</div>
+<div class="btn">
+<input onclick="Saver()" type="button" value="SAVE" class="button">
+</div>
+</div>
+</div>
+
+<p id="ulozit"></p>
+<input type="button" onclick="deleting()" class="delete" id = "delete" value="delete">
+        </section>
+    </body>
+</html>
