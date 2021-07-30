@@ -4,6 +4,7 @@ ulozit = [];
 
 
 
+
 function Saver()
 {
 
@@ -13,18 +14,22 @@ let specifikace = document.getElementById("specifikace").value;
 let clip = document.getElementById("clip").value;
 let select = document.getElementById("select").value;
 
+let d = new Date();
+let h = d.getHours();
+let m = d.getMinutes();
 
-if (sport == false &&  clip == false && select == false)
+
+if (sport == false ||  clip == false)
 {
     alert("Vyplňte")
 }
 else
 {
-    ulozit.push(sport, specifikace, clip, select,"<br>")
+    ulozit.push("Sport: ",sport," - ", "Specifikace: ", specifikace," - ",select,":", clip," Čas: ",h,":",m,"<br>")
 }
 
 
-document.getElementById("ulozit").innerHTML = ulozit;
+document.getElementById("ulozit").innerHTML = ulozit.join("");
 
 
 }
@@ -33,9 +38,10 @@ document.getElementById("ulozit").innerHTML = ulozit;
 function deleting()
 {
     
+    let del = 14;
+    ulozit.splice(ulozit.length - del);
     
-     
-    
+    document.getElementById("ulozit").innerHTML = ulozit.join("");
  
     
 }
