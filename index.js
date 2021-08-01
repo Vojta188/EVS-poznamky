@@ -55,10 +55,10 @@ document.getElementById("ulozit").innerHTML = ulozit.join("");
 
 function deleting()
 {
-    
-    let del = 1;
+    if(ulozit.length > 0)
+    {let del = 1;
     ulozit.splice(ulozit.length - del);
-    Saver.id = x--;
+    Saver.id = x--;}
     
     document.getElementById("ulozit").innerHTML = ulozit.join("");
  
@@ -75,8 +75,8 @@ function prehrano()
     if(cislo == 1)
     
        { 
-        ulozit.push[0]("prehrano")
-        document.getElementById("ulozit").innerHTML = ulozit[0] + "prehrano";
+        
+        
         
     }
     
