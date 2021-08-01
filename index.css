@@ -64,3 +64,20 @@ select
 .uloz{
     font-size: 24px;
 }
+
+.cislo
+{
+    width: 5%;
+    font-size: 35px;
+    float: left;
+}
+.prehrano
+{
+    margin-left: 10%;
+}
+.Prehranobtn
+{
+    width: 120px;
+    padding: 20px;
+    
+}
